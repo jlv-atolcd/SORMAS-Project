@@ -109,6 +109,7 @@ public interface Captions {
 	String bulkInvestigationStatus = "bulkInvestigationStatus";
 	String bulkLostToFollowUp = "bulkLostToFollowUp";
 	String bulkSurveillanceOfficer = "bulkSurveillanceOfficer";
+	String campaignNewCampaign = "campaignNewCampaign";
 	String caseActiveCases = "caseActiveCases";
 	String caseAllCases = "caseAllCases";
 	String caseArchivedCases = "caseArchivedCases";
@@ -792,6 +793,7 @@ public interface Captions {
 	String LoginSidebar_poweredBy = "LoginSidebar.poweredBy";
 	String mainMenuAbout = "mainMenuAbout";
 	String mainMenuAggregateReports = "mainMenuAggregateReports";
+	String mainMenuCampaigns = "mainMenuCampaigns";
 	String mainMenuCases = "mainMenuCases";
 	String mainMenuConfiguration = "mainMenuConfiguration";
 	String mainMenuContacts = "mainMenuContacts";
@@ -1445,6 +1447,7 @@ public interface Captions {
 	String WeeklyReportOfficerSummary_informantReports = "WeeklyReportOfficerSummary.informantReports";
 	String WeeklyReportOfficerSummary_informants = "WeeklyReportOfficerSummary.informants";
 	String WeeklyReportOfficerSummary_informantZeroReports = "WeeklyReportOfficerSummary.informantZeroReports";
+	String WeeklyReportOfficerSummary_officer = "WeeklyReportOfficerSummary.officer";
 	String WeeklyReportOfficerSummary_officerReportDate = "WeeklyReportOfficerSummary.officerReportDate";
 	String WeeklyReportOfficerSummary_totalCaseCount = "WeeklyReportOfficerSummary.totalCaseCount";
 	String weeklyReportRegionInformants = "weeklyReportRegionInformants";

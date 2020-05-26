@@ -4302,6 +4302,7 @@ CREATE TABLE campaigns(
 	primary key(id)
 );
 
+ALTER TABLE campaigns OWNER TO sormas_user;
 ALTER TABLE campaigns ADD CONSTRAINT fk_campaigns_creatinguser_id FOREIGN KEY (creatinguser_id) REFERENCES users(id);
 CREATE TABLE campaigns_history (LIKE campaigns);
 

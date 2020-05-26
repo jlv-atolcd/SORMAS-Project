@@ -38,6 +38,7 @@ import de.symeda.sormas.api.i18n.I18nProperties;
 import de.symeda.sormas.api.user.UserRight;
 import de.symeda.sormas.api.user.UserRole;
 import de.symeda.sormas.api.utils.DataHelper;
+import de.symeda.sormas.ui.campaign.CampaignsView;
 import de.symeda.sormas.ui.caze.CasesView;
 import de.symeda.sormas.ui.configuration.AbstractConfigurationView;
 import de.symeda.sormas.ui.configuration.infrastructure.CommunitiesView;
@@ -75,6 +76,7 @@ public class MainScreen extends HorizontalLayout {
 			ContactsView.VIEW_NAME,
 			EventsView.VIEW_NAME,
 			SamplesView.VIEW_NAME,
+			CampaignsView.VIEW_NAME,
 			ReportsView.VIEW_NAME,
 			StatisticsView.VIEW_NAME,
 			UsersView.VIEW_NAME,
@@ -148,6 +150,11 @@ public class MainScreen extends HorizontalLayout {
 		if (permitted(UserRight.SAMPLE_VIEW)) {
 			ControllerProvider.getSampleController().registerViews(navigator);
 			menu.addView(SamplesView.class, SamplesView.VIEW_NAME, I18nProperties.getCaption(Captions.mainMenuSamples), VaadinIcons.DATABASE);
+		}
+		if (permitted(UserRight.CAMPAIGN_VIEW)) {
+			ControllerProvider.getCampaignController().registerViews(navigator);
+			menu.addView(CampaignsView.class, CampaignsView.VIEW_NAME,
+					I18nProperties.getCaption(Captions.mainMenuCampaigns), VaadinIcons.CLIPBOARD_CHECK);
 		}
 		if (permitted(FeatureType.WEEKLY_REPORTING, UserRight.WEEKLYREPORT_VIEW)) {
 			menu.addView(ReportsView.class, ReportsView.VIEW_NAME, I18nProperties.getCaption(Captions.mainMenuReports), VaadinIcons.FILE_TEXT);
